@@ -1,0 +1,18 @@
+body{
+	background-color:lightblue;
+	font-family:Times New Roman;
+}
+
+h1{
+	text-align:center;
+	border-style:outset;
+	border-color:darkblue;
+	background-color:white;
+}
+
+#rightpanel{
+	width:45%;
+	border-style:outset;
+	border-color:darkblue;
+	background-color:white;
+}
