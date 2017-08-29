@@ -1,18 +1,26 @@
-body{
-	background-color:lightblue;
-	font-family:Times New Roman;
-}
-
-h1{
-	text-align:center;
-	border-style:outset;
-	border-color:darkblue;
-	background-color:white;
-}
-
 #rightpanel{
-	width:45%;
-	border-style:outset;
-	border-color:darkblue;
-	background-color:white;
+	display:inline-block;
+	width:100%;
+	max-width:1405px;
+	margin:auto;
+	border-radius:10px 35px;
+}
+
+#leftpanel{
+	text-align:left;
+	display:inline-block;
+	position:absolute;
+	left:75%;
+	width:100%;
+	max-width:465px;
+	margin:auto;
+	border-radius:15px 5px;
+}
+
+#recentinfo {
+	padding:5px;
+}
+
+#leftpanel h3, p, ul{
+	margin-left:5px;
 }
