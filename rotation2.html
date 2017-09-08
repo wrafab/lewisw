@@ -57,14 +57,18 @@
 		<script>
 			//Runs whichever function goes with the chosen project
 			document.getElementById("p1").onclick = function() {showP1Stuff()};
-			document.getElementById("p2").onclick = function() {showP2Stuff()};
+			//document.getElementById("p2").onclick = function() {showP2Stuff()};
 			document.getElementById("pstuff").style.display = 'none';
+			
+			//Var Block!
 			var writing = document.getElementById("pstuff");
 			var placeholder = document.getElementById("placeholder");
 			var head = document.getElementById("pstuffh");
 			var body = document.getElementById("pstuffb");
 			var img = document.getElementById("pstuffimg");
 			var leftPanel = document.getElementById("leftpanel");
+			
+			//Actual Code Starts!
 			function showP1Stuff() {
 				if (head.innerHTML != "Wax Seal Stamp") {
 					writing.style.display = 'inline-block';
