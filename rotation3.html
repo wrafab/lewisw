@@ -52,6 +52,8 @@
 			<div id="pstuff">
 				<h3 id="pstuffh"> </h3>
 				<img src="" alt="" id="pstuffimg">
+				<img src="" alt="" id="pstuffimg2">
+				<img src="" alt="" id="pstuffimg3">
 				<p id="pstuffb"> </p>
 			</div>
 		</div>
@@ -72,6 +74,8 @@
 			var head = document.getElementById("pstuffh");
 			var body = document.getElementById("pstuffb");
 			var img = document.getElementById("pstuffimg");
+			var img2 = document.getElementById("pstuffimg2");
+			var img3 = document.getElementById("pstuffimg3");
 			var leftPanel = document.getElementById("leftpanel");
 			
 			//Actual Code Starts!
@@ -85,6 +89,14 @@
 					img.height = "375";
 					img.width = "350";
 					img.style.display = 'block';
+					img2.src = "tshirterror.jpg";
+					img2.height = "375";
+					img2.width = "350";
+					img2.style.display = 'block';
+					img3.src = "";
+					img3.height = "375";
+					img3.width = "350";
+					img3.style.display = 'none';
 					body.innerHTML = "For this project I had to create a tshirt using the garment printer. I decided to make a shirt for my dad using one of his favorite lines from The Hitchhiker\'s Guide to the Galaxy.";
 					placeholder.style.display = 'none';
 					leftPanel.style.display = 'inline-block';
