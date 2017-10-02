@@ -79,30 +79,29 @@
 			var img3 = document.getElementById("pstuffimg3");
 			var img4 = document.getElementById("pstuffimg4");
 			var leftPanel = document.getElementById("leftpanel");
+			img.height = "375";
+			img.width = "350";
+			img2.height = "375";
+			img2.width = "350";
+			img3.height = "375";
+			img3.width = "350";
+			img4.height = "375";
+			img4.width = "350";
 			
 			//Actual Code Starts!
-			function changeImg(var image, var source, var display){
-				image.src = source;
-				image.height = "375";
-				image.width = "350";
-				image.style.display = display;
-			}
-			
 			function showP1Stuff() {
 				if (head.innerHTML != "T-Shirt") {
 					writing.style.display = 'inline-block';
 					leftPanel.style.borderRadius = "15px 80px";
 					head.innerHTML = "T-Shirt";
-					changeImg(img, "tshirt.jpg", 'inline-block');
-					changeImg(img2, "tshirterror.jpg", 'inline-block');
-					changeImg(img3, "", 'none');
-					changeImg(img4, "", 'none');
-					/*img.src = "tshirt.jpg";
+					img.src = "tshirt.jpg";
 					img.style.display = 'inline-block';
 					img2.src = "tshirterror.jpg";
 					img2.style.display = 'inline-block';
 					img3.src = "";
-					img3.style.display = 'none'*/
+					img3.style.display = 'none'
+					img4.src = "";
+					img4.style.display = 'none'
 					body.innerHTML = "For this project I had to create a tshirt using the garment printer. I decided to make a shirt for my dad using one of his favorite lines from The Hitchhiker\'s Guide to the Galaxy.<br>As can be seen in the second picture, when I was printing the shirt I did not position it exactly right, so the fingers of the newt's hand got cut off.";
 					placeholder.style.display = 'none';
 					leftPanel.style.display = 'inline-block';
@@ -113,6 +112,7 @@
 					img.style.display = 'none';
 					img2.style.display = 'none';
 					img3.style.display ='none';
+					img4.style.display = 'none';
 					placeholder.style.display = 'inline-block';
 					leftPanel.style.display = 'none';
 					
@@ -123,17 +123,14 @@
 					writing.style.display = 'inline-block';
 					leftPanel.style.borderRadius = "15px 40px";
 					head.innerHTML = "Puzzle Design";
+					img.src = "";
 					img.style.display = 'none';
-					img.height = "375";
-					img.width = "350";
 					img2.src = "";
-					img2.height = "375";
-					img2.width = "350";
 					img2.style.display = 'none';
 					img3.src = "";
-					img3.height = "375";
-					img3.width = "350";
 					img3.style.display = 'none';
+					img4.src = "";
+					img4.style.display = 'none'
 					body.innerHTML = "";
 					placeholder.style.display = 'none';
 					leftPanel.style.display = 'inline-block';
@@ -142,16 +139,9 @@
 					head.innerHTML = "";
 					body.innerHTML = "";
 					img.style.display = 'none';
-					img.height = "375";
-					img.width = "350";
-					img2.src = "";
-					img2.height = "375";
-					img2.width = "350";
 					img2.style.display = 'none';
-					img3.src = "";
-					img3.height = "375";
-					img3.width = "350";
 					img3.style.display = 'none';
+					img4.style.display = 'none';
 					placeholder.style.display = 'inline-block';
 					leftPanel.style.display = 'none';
 				}
@@ -161,17 +151,14 @@
 					writing.style.display = 'inline-block';
 					leftPanel.style.borderRadius = "15px 40px";
 					head.innerHTML = "Phone Case";
+					img.src = "";
 					img.style.display = 'none';
-					img.height = "375";
-					img.width = "350";
 					img2.src = "";
-					img2.height = "375";
-					img2.width = "350";
 					img2.style.display = 'none';
 					img3.src = "";
-					img3.height = "375";
-					img3.width = "350";
 					img3.style.display = 'none';
+					img4.src = "";
+					img4.style.display = 'none'
 					body.innerHTML = "";
 					placeholder.style.display = 'none';
 					leftPanel.style.display = 'inline-block';
@@ -179,10 +166,10 @@
 				else {
 					head.innerHTML = "";
 					body.innerHTML = "";
-					changeImg(img1, "", 'none');
-					changeImg(img2, "", 'none');
-					changeImg(img3, "", 'none');
-					changeImg(img4, "", 'none');
+					img.style.display = 'none';
+					img2.style.display = 'none';
+					img3.style.display = 'none';
+					img4.style.display = 'none';
 					placeholder.style.display = 'inline-block';
 					leftPanel.style.display = 'none';
 				}
