@@ -88,60 +88,24 @@
 				image.style.display = display;
 			}
 			
-			function setPage(var imgNum, var headTxt, var pHStatus, var lPStatus, var iS, var iS2, var iS3, var iS4){
-				head.innerHTML = headTxt;
-				switch(imgNum){
-					case 4:
-						changeImg(img, iS, 'inline-block');
-						changeImg(img2, iS2, 'inline-block');
-						changeImg(img3, iS3, 'inline-block');
-						changeImg(img4, iS4, 'inline-block');
-						break;
-					case 3:
-						changeImg(img, iS, 'inline-block');
-						changeImg(img2, iS2, 'inline-block');
-						changeImg(img3, iS3, 'inline-block');
-						changeImg(img4, iS4, 'none');
-						break;
-					case 2:
-						changeImg(img, iS, 'inline-block');
-						changeImg(img2, iS2, 'inline-block');
-						changeImg(img3, iS3, 'none');
-						changeImg(img4, iS4, 'none');
-						break;
-					case 1:
-						changeImg(img, iS, 'inline-block');
-						changeImg(img2, iS2, 'none');
-						changeImg(img3, iS3, 'none');
-						changeImg(img4, iS4, 'none');
-						break;
-				}
-				placeholder.style.display = pHStatus;
-				leftPanel.syle.display = lPStatus;
-			}
-			
 			function showP1Stuff() {
 				if (head.innerHTML != "T-Shirt") {
-					
-					setPage(2, "T-Shirt", 'none', 'inline-block', "tshirt.jpg", "tshirterror.jpg", "", "");
 					writing.style.display = 'inline-block';
-					/*leftPanel.style.borderRadius = "15px 80px";
+					leftPanel.style.borderRadius = "15px 80px";
 					head.innerHTML = "T-Shirt";
-					img.src = "tshirt.jpg";
-					img.height = "375";
-					img.width = "350";
+					changeImg(img, "tshirt.jpg", 'inline-block');
+					changeImg(img2, "tshirterror.jpg", 'inline-block');
+					changeImg(img3, "", 'none');
+					changeImg(img4, "", 'none');
+					/*img.src = "tshirt.jpg";
 					img.style.display = 'inline-block';
 					img2.src = "tshirterror.jpg";
-					img2.height = "375";
-					img2.width = "350";
 					img2.style.display = 'inline-block';
 					img3.src = "";
-					img3.height = "375";
-					img3.width = "350";
-					img3.style.display = 'none';*/
+					img3.style.display = 'none'*/
 					body.innerHTML = "For this project I had to create a tshirt using the garment printer. I decided to make a shirt for my dad using one of his favorite lines from The Hitchhiker\'s Guide to the Galaxy.<br>As can be seen in the second picture, when I was printing the shirt I did not position it exactly right, so the fingers of the newt's hand got cut off.";
-					/*placeholder.style.display = 'none';
-					leftPanel.style.display = 'inline-block';*/
+					placeholder.style.display = 'none';
+					leftPanel.style.display = 'inline-block';
 				}
 				else {
 					head.innerHTML = "";
