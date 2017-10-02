@@ -54,6 +54,7 @@
 				<img src="" alt="" id="pstuffimg">
 				<img src="" alt="" id="pstuffimg2">
 				<img src="" alt="" id="pstuffimg3">
+				<img src="" alt="" id="pstuffimg4">
 				<p id="pstuffb"> </p>
 			</div>
 		</div>
@@ -76,12 +77,54 @@
 			var img = document.getElementById("pstuffimg");
 			var img2 = document.getElementById("pstuffimg2");
 			var img3 = document.getElementById("pstuffimg3");
+			var img4 = document.getElementById("pstuffimg4");
 			var leftPanel = document.getElementById("leftpanel");
 			
 			//Actual Code Starts!
+			function changeImg(var image, var source, var display){
+				image.src = source;
+				image.height = "375";
+				image.width = "350";
+				image.style.display = display;
+			}
+			
+			function setPage(var imgNum, var headTxt, var pHStatus, var lPStatus, var iS, var iS2, var iS3, var iS4){
+				head.innerHTML = headTxt;
+				switch(imgNum){
+					case 4:
+						changeImg(img, iS, 'inline-block');
+						changeImg(img2, iS2, 'inline-block');
+						changeImg(img3, iS3, 'inline-block');
+						changeImg(img4, iS4, 'inline-block');
+						break;
+					case 3:
+						changeImg(img, iS, 'inline-block');
+						changeImg(img2, iS2, 'inline-block');
+						changeImg(img3, iS3, 'inline-block');
+						changeImg(img4, iS4, 'none');
+						break;
+					case 2:
+						changeImg(img, iS, 'inline-block');
+						changeImg(img2, iS2, 'inline-block');
+						changeImg(img3, iS3, 'none');
+						changeImg(img4, iS4, 'none');
+						break;
+					case 1:
+						changeImg(img, iS, 'inline-block');
+						changeImg(img2, iS2, 'none');
+						changeImg(img3, iS3, 'none');
+						changeImg(img4, iS4, 'none');
+						break;
+				}
+				placeholder.style.display = pHStatus;
+				leftPanel.syle.display = lPStatus;
+			}
+			
 			function showP1Stuff() {
 				if (head.innerHTML != "T-Shirt") {
-					writing.style.display = 'inline-block';
+					
+					setPage(2, "T-Shirt", 'none', 'inline-block', "tshirt.jpg", "tshirterror.jpg", "", "");
+					/*writing.style.display = 'inline-block';
 					leftPanel.style.borderRadius = "15px 80px";
 					head.innerHTML = "T-Shirt";
 					img.src = "tshirt.jpg";
@@ -95,10 +138,10 @@
 					img3.src = "";
 					img3.height = "375";
 					img3.width = "350";
-					img3.style.display = 'none';
+					img3.style.display = 'none';*/
 					body.innerHTML = "For this project I had to create a tshirt using the garment printer. I decided to make a shirt for my dad using one of his favorite lines from The Hitchhiker\'s Guide to the Galaxy.<br>As can be seen in the second picture, when I was printing the shirt I did not position it exactly right, so the fingers of the newt's hand got cut off.";
-					placeholder.style.display = 'none';
-					leftPanel.style.display = 'inline-block';
+					/*placeholder.style.display = 'none';
+					leftPanel.style.display = 'inline-block';*/
 				}
 				else {
 					head.innerHTML = "";
@@ -172,17 +215,10 @@
 				else {
 					head.innerHTML = "";
 					body.innerHTML = "";
-					img.style.display = 'none';
-					img.height = "375";
-					img.width = "350";
-					img2.src = "";
-					img2.height = "375";
-					img2.width = "350";
-					img2.style.display = 'none';
-					img3.src = "";
-					img3.height = "375";
-					img3.width = "350";
-					img3.style.display = 'none';
+					changeImg(img);
+					changeImg(img2);
+					changeImg(img3);
+					changeImg(img4);
 					placeholder.style.display = 'inline-block';
 					leftPanel.style.display = 'none';
 				}
