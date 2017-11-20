@@ -47,12 +47,12 @@
 				<div id="p3stuff" class="pddstuff">
 				</div>
 			</div>
-			<div id="pdd3" class="pdds">
+			<div id="pdd4" class="pdds">
 				<button id="p3" class="btn">Cork Coaster</button>
 				<div id="p3stuff" class="pddstuff">
 				</div>
 			</div>
-			<div id="pdd3" class="pdds">
+			<div id="pdd5" class="pdds">
 				<button id="p3" class="btn">Bookmark</button>
 				<div id="p3stuff" class="pddstuff">
 				</div>
@@ -78,6 +78,8 @@
 			document.getElementById("p1").onclick = function() {showP1Stuff()};
 			document.getElementById("p2").onclick = function() {showP2Stuff()};
       			document.getElementById("p3").onclick = function() {showP3Stuff()};
+			document.getElementById("p4").onclick = function() {showP4Stuff()};
+			document.getElementById("p5").onclick = function() {showP5Stuff()};
 			document.getElementById("pstuff").style.display = 'none';
 			
 			//Var Block!
@@ -182,6 +184,68 @@
 					img5.src = "";
 					img5.style.display = 'none';
 					body.innerHTML = "This project was to make a press fit kit using three different shapes. I designed the shapes on Corel Draw then cut them out using the laser cutter.";
+					placeholder.style.display = 'none';
+					leftPanel.style.display = 'inline-block';
+				}
+				else {
+					head.innerHTML = "";
+					body.innerHTML = "";
+					img.style.display = 'none';
+					img2.style.display = 'none';
+					img3.style.display = 'none';
+					img4.style.display = 'none';
+					img5.style.display = 'none';
+					placeholder.style.display = 'inline-block';
+					leftPanel.style.display = 'none';
+				}
+			}
+	function showP4Stuff() {
+				if (head.innerHTML != "Coaster") {
+					writing.style.display = 'inline-block';
+					leftPanel.style.borderRadius = "15px 40px";
+					head.innerHTML = "Coaster";
+					img.src = "";
+					img.style.display = 'inline-block';
+					img2.src = "";
+					img2.style.display = 'none';
+					img3.src = "";
+					img3.style.display = 'none';
+					img4.src = "";
+					img4.style.display = 'none'
+					img5.src = "";
+					img5.style.display = 'none';
+					body.innerHTML = "";
+					placeholder.style.display = 'none';
+					leftPanel.style.display = 'inline-block';
+				}
+				else {
+					head.innerHTML = "";
+					body.innerHTML = "";
+					img.style.display = 'none';
+					img2.style.display = 'none';
+					img3.style.display = 'none';
+					img4.style.display = 'none';
+					img5.style.display = 'none';
+					placeholder.style.display = 'inline-block';
+					leftPanel.style.display = 'none';
+				}
+			}
+	function showP5Stuff() {
+				if (head.innerHTML != "Bookmark") {
+					writing.style.display = 'inline-block';
+					leftPanel.style.borderRadius = "15px 40px";
+					head.innerHTML = "Bookmark";
+					img.src = "";
+					img.style.display = 'inline-block';
+					img2.src = "";
+					img2.style.display = 'none';
+					img3.src = "";
+					img3.style.display = 'none';
+					img4.src = "";
+					img4.style.display = 'none'
+					img5.src = "";
+					img5.style.display = 'none';
+					body.innerHTML = "";
 					placeholder.style.display = 'none';
 					leftPanel.style.display = 'inline-block';
 				}
