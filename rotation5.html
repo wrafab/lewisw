@@ -35,26 +35,21 @@
 		<div id="rightpanel" class="mainblocks">
 			<h3>Rotation 4 Project List</h3>
 			<div id="pdd" class="pdds">
-				<button id="p1" class="btn">Puzzle Creation</button>
+				<button id="p1" class="btn">Makerbot Info</button>
 			</div>
 			<div id="pdd2" class="pdds">
-				<button id="p2" class="btn">Cardboard Box</button>
+				<button id="p2" class="btn">3D Printed Bust</button>
 				<div id="p2stuff" class="pddstuff">
 				</div>
 			</div>
       			<div id="pdd3" class="pdds">
-				<button id="p3" class="btn">Press Fit Kit</button>
+				<button id="p3" class="btn">Additively Manufactured Object</button>
 				<div id="p3stuff" class="pddstuff">
 				</div>
 			</div>
 			<div id="pdd4" class="pdds">
-				<button id="p4" class="btn">Cork Coaster</button>
-				<div id="p3stuff" class="pddstuff">
-				</div>
-			</div>
-			<div id="pdd5" class="pdds">
-				<button id="p5" class="btn">Bookmark</button>
-				<div id="p3stuff" class="pddstuff">
+				<button id="p4" class="btn">Drip Irrigation</button>
+				<div id="p4stuff" class="pddstuff">
 				</div>
 			</div>
 		</div>
@@ -79,7 +74,6 @@
 			document.getElementById("p2").onclick = function() {showP2Stuff()};
       			document.getElementById("p3").onclick = function() {showP3Stuff()};
 			document.getElementById("p4").onclick = function() {showP4Stuff()};
-			document.getElementById("p5").onclick = function() {showP5Stuff()};
 			document.getElementById("pstuff").style.display = 'none';
 			
 			//Var Block!
@@ -106,21 +100,21 @@
 			
 			//Actual Code Starts!
 			function showP1Stuff() {
-				if (head.innerHTML != "Puzzle Creation") {
+				if (head.innerHTML != "Makerbot Info") {
 					writing.style.display = 'inline-block';
 					leftPanel.style.borderRadius = "15px 80px";
-					head.innerHTML = "Puzzle Creation";
-					img.src = "uncutpuzzle.jpg";
+					head.innerHTML = "Makerbot Info";
+					img.src = "";
 					img.style.display = 'inline-block';
-					img2.src = "lasercuttingpuzzle.jpg";
+					img2.src = "";
 					img2.style.display = 'inline-block';
-					img3.src = "finishedpuzzle.jpg";
+					img3.src = "";
 					img3.style.display = 'inline-block';
 					img4.src = "";
 					img4.style.display = 'none';
 					img5.src = "";
 					img5.style.display = 'none';
-					body.innerHTML = "This is the second part of the puzzle project from last rotation. In this rotation, I used Corel Draw to create a jigsaw puzzle pattern to cut out using the laser cutter to make a usable puzzle. That is the process being shown in the second photo. The final photo is the finished puzzle.";
+					body.innerHTML = "";
 					placeholder.style.display = 'none';
 					leftPanel.style.display = 'inline-block';
 				}
@@ -138,11 +132,11 @@
 				}
 			}
 			function showP2Stuff() {
-				if (head.innerHTML != "Cardboard Box") {
+				if (head.innerHTML != "3D Printed Bust") {
 					writing.style.display = 'inline-block';
 					leftPanel.style.borderRadius = "15px 40px";
-					head.innerHTML = "Cardboard Box";
-					img.src = "finishedbox.JPG";
+					head.innerHTML = "3D Printed Bust";
+					img.src = "";
 					img.style.display = 'inline-block';
 					img2.src = "";
 					img2.style.display = 'none';
@@ -152,7 +146,7 @@
 					img4.style.display = 'none';
 					img5.src = "";
 					img5.style.display = 'none';
-					body.innerHTML = "For this project, I had to make a cardboard box using the base design from MakerCase, and then I rastered some extra designs onto the cube so that the cube would have both raster and vector elements. I then used the laser cutter to cut out the cube and then assembled it.";
+					body.innerHTML = "";
 					placeholder.style.display = 'none';
 					leftPanel.style.display = 'inline-block';
 				}
@@ -169,11 +163,11 @@
 				}
 			}
       			function showP3Stuff() {
-				if (head.innerHTML != "Press Fit Kit") {
+				if (head.innerHTML != "Additively Manufactured Object") {
 					writing.style.display = 'inline-block';
 					leftPanel.style.borderRadius = "15px 40px";
-					head.innerHTML = "Press Fit Kit";
-					img.src = "finishedpressfit.JPG";
+					head.innerHTML = "Additively Manufactured Object";
+					img.src = "";
 					img.style.display = 'inline-block';
 					img2.src = "";
 					img2.style.display = 'none';
@@ -183,7 +177,7 @@
 					img4.style.display = 'none'
 					img5.src = "";
 					img5.style.display = 'none';
-					body.innerHTML = "This project was to make a press fit kit using three different shapes. I designed the shapes on Corel Draw then cut them out using the laser cutter.";
+					body.innerHTML = "";
 					placeholder.style.display = 'none';
 					leftPanel.style.display = 'inline-block';
 				}
@@ -200,42 +194,11 @@
 				}
 			}
 			function showP4Stuff() {
-				if (head.innerHTML != "Coaster") {
+				if (head.innerHTML != "Drip Irrigation") {
 					writing.style.display = 'inline-block';
 					leftPanel.style.borderRadius = "15px 40px";
-					head.innerHTML = "Coaster";
+					head.innerHTML = "Drip Irrigation";
 					img.src = "finishedcoaster.JPG";
-					img.style.display = 'inline-block';
-					img2.src = "";
-					img2.style.display = 'none';
-					img3.src = "";
-					img3.style.display = 'none';
-					img4.src = "";
-					img4.style.display = 'none'
-					img5.src = "";
-					img5.style.display = 'none';
-					body.innerHTML = "This project was to raster a design onto a cork circle to make a custom coaster.";
-					placeholder.style.display = 'none';
-					leftPanel.style.display = 'inline-block';
-				}
-				else {
-					head.innerHTML = "";
-					body.innerHTML = "";
-					img.style.display = 'none';
-					img2.style.display = 'none';
-					img3.style.display = 'none';
-					img4.style.display = 'none';
-					img5.style.display = 'none';
-					placeholder.style.display = 'inline-block';
-					leftPanel.style.display = 'none';
-				}
-			}
-			function showP5Stuff() {
-				if (head.innerHTML != "Bookmark") {
-					writing.style.display = 'inline-block';
-					leftPanel.style.borderRadius = "15px 40px";
-					head.innerHTML = "Bookmark";
-					img.src = "";
 					img.style.display = 'inline-block';
 					img2.src = "";
 					img2.style.display = 'none';
