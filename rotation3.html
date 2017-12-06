@@ -57,6 +57,7 @@
 				<img src="" alt="" id="pstuffimg4">
 				<img src="" alt="" id="pstuffimg5">
 				<p id="pstuffb"> </p>
+				<a href="puzzledesignfile.jpg" id="link1"></a>
 			</div>
 		</div>
 		<div id="placeholder">
@@ -81,6 +82,7 @@
 			var img4 = document.getElementById("pstuffimg4");
 			var img5 = document.getElementById("pstuffimg5");
 			var leftPanel = document.getElementById("leftpanel");
+			var link1 = document.getElementById("link1");
 			img.height = "375";
 			img.width = "350";
 			img2.height = "375";
@@ -111,6 +113,8 @@
 					body.innerHTML = "For this project I had to create a tshirt using the garment printer. I decided to make a shirt for my dad using one of his favorite lines from The Hitchhiker\'s Guide to the Galaxy.<br>As can be seen in the second picture, when I was printing the shirt I did not position it exactly right, so the fingers of the newt's hand got cut off.";
 					placeholder.style.display = 'none';
 					leftPanel.style.display = 'inline-block';
+					link1.innerHTML = "";
+					link1.href = "";
 				}
 				else {
 					head.innerHTML = "";
@@ -122,6 +126,8 @@
 					img5.style.display = 'none';
 					placeholder.style.display = 'inline-block';
 					leftPanel.style.display = 'none';
+					link1.innerHTML = "";
+					link1.href = "";
 					
 				}
 			}
@@ -143,6 +149,8 @@
 					body.innerHTML = "This project involved making a puzzle. My design for the puzzle (done on GIMP) is the first image displayed up top. After creating the design I used the UV printer to print the design onto a board, which is the process shown in image 2.";
 					placeholder.style.display = 'none';
 					leftPanel.style.display = 'inline-block';
+					link1.innerHTML = "Puzzle Design";
+					link1.href = "puzzledesignfile.jpg";
 				}
 				else {
 					head.innerHTML = "";
@@ -154,6 +162,8 @@
 					img5.style.display = 'none';
 					placeholder.style.display = 'inline-block';
 					leftPanel.style.display = 'none';
+					link1.innerHTML = "";
+					link1.href = "";
 				}
 			}
       function showP3Stuff() {
@@ -174,6 +184,8 @@
 					body.innerHTML = "For the final project of this rotation, I made a phone case with the UV printer. It's for my brother, which is why it has the Houston Texan's logo on it. The first picture is the case right after it was printed. The second one is of the case on the phone.</br>When I gave it to him, my brother also pointed out that I messed up on getting the colors on the right side, which would be a pretty easy mistake to fix by just flipping the image before printing.";
 					placeholder.style.display = 'none';
 					leftPanel.style.display = 'inline-block';
+					link1.innerHTML = "";
+					link1.href = "";
 				}
 				else {
 					head.innerHTML = "";
@@ -185,6 +197,8 @@
 					img5.style.display = 'none';
 					placeholder.style.display = 'inline-block';
 					leftPanel.style.display = 'none';
+					link1.innerHTML = "";
+					link1.href = "";
 				}
 			}
 		</script>
