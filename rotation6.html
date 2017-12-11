@@ -54,6 +54,7 @@
 				<img src="" alt="" id="pstuffimg4">
 				<img src="" alt="" id="pstuffimg5">
 				<p id="pstuffb"> </p>
+				<a href="" id="link1"></a>
 			</div>
 		</div>
 		<div id="placeholder">
@@ -77,6 +78,7 @@
 			var img4 = document.getElementById("pstuffimg4");
 			var img5 = document.getElementById("pstuffimg5");
 			var leftPanel = document.getElementById("leftpanel");
+			var link1 = document.getElementById("link1");
 			img.height = "375";
 			img.width = "350";
 			img2.height = "375";
@@ -104,7 +106,9 @@
 					img4.style.display = 'none';
 					img5.src = "";
 					img5.style.display = 'none';
-					body.innerHTML = "";
+					body.innerHTML = "For my chocolate mold I made a Susuwatari, or Soot Ball, from Studio Ghibli films. I made the design using Autodesk Inventor, and then sent it off to be carved out of a wax cube to make the first mold. After that was done, a second mold was made out of material that would be safe to eat out of. This is the mold that was used to make the chocolate.";
+					link1.innerHTML = "Susuwatari";
+					link1.href = "susuwatari.ipt";
 					placeholder.style.display = 'none';
 					leftPanel.style.display = 'inline-block';
 				}
