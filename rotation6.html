@@ -34,6 +34,11 @@
 		</br>
 		<div id="rightpanel" class="mainblocks">
 			<h3>Rotation 6 Project List</h3>
+			<div id="pdd1" class="pdds">
+				<button id="p1" class="btn">Vinyl Stickers</button>
+				<div id="p1stuff" class="pddstuff">
+				</div>
+			</div>
 			<div id="pdd2" class="pdds">
 				<button id="p2" class="btn">Chocolate Mold</button>
 				<div id="p2stuff" class="pddstuff">
@@ -63,6 +68,7 @@
 		</div>
 		<script>
 			//Runs whichever function goes with the chosen project
+			document.getElementById("p1").onclick = function() {showP1Stuff()};
 			document.getElementById("p2").onclick = function() {showP2Stuff()};
       			document.getElementById("p3").onclick = function() {showP3Stuff()};
 			document.getElementById("pstuff").style.display = 'none';
@@ -91,6 +97,41 @@
 			img5.width = "350";
 			
 			//Actual Code Starts!
+			function showP1Stuff() {
+				if (head.innerHTML != "Vinyl Stickers") {
+					writing.style.display = 'inline-block';
+					leftPanel.style.borderRadius = "15px 40px";
+					head.innerHTML = "Vinyl Stickers";
+					img.src = "";
+					img.style.display = 'inline-block';
+					img2.src = "";
+					img2.style.display = 'none';
+					img3.src = "";
+					img3.style.display = 'none';
+					img4.src = "";
+					img4.style.display = 'none';
+					img5.src = "";
+					img5.style.display = 'none';
+					body.innerHTML = "";
+					link1.innerHTML = "";
+					link1.href = "";
+					placeholder.style.display = 'none';
+					leftPanel.style.display = 'inline-block';
+				}
+				else {
+					head.innerHTML = "";
+					body.innerHTML = "";
+					img.style.display = 'none';
+					img2.style.display = 'none';
+					img3.style.display = 'none';
+					img4.style.display = 'none';
+					img5.style.display = 'none';
+					link1.innerHTML = "";
+					link1.href = "";
+					placeholder.style.display = 'inline-block';
+					leftPanel.style.display = 'none';
+				}
+			}
 			function showP2Stuff() {
 				if (head.innerHTML != "Chocolate Mold") {
 					writing.style.display = 'inline-block';
