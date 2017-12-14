@@ -35,21 +35,16 @@
 		<div id="rightpanel" class="mainblocks">
 			<h3>Rotation 9 Project List</h3>
 			<div id="pdd" class="pdds">
-				<button id="p1" class="btn">A</button>
+				<button id="p1" class="btn">Part 1</button>
 			</div>
 			<div id="pdd2" class="pdds">
-				<button id="p2" class="btn">B</button>
+				<button id="p2" class="btn">Part 2</button>
 				<div id="p2stuff" class="pddstuff">
 				</div>
 			</div>
       			<div id="pdd3" class="pdds">
-				<button id="p3" class="btn">C</button>
+				<button id="p3" class="btn">Part 3</button>
 				<div id="p3stuff" class="pddstuff">
-				</div>
-			</div>
-			<div id="pdd4" class="pdds">
-				<button id="p4" class="btn">D</button>
-				<div id="p4stuff" class="pddstuff">
 				</div>
 			</div>
 		</div>
@@ -100,21 +95,21 @@
 			
 			//Actual Code Starts!
 			function showP1Stuff() {
-				if (head.innerHTML != "A") {
+				if (head.innerHTML != "Part 1") {
 					writing.style.display = 'inline-block';
 					leftPanel.style.borderRadius = "15px 80px";
-					head.innerHTML = "A";
-					img.src = "";
+					head.innerHTML = "Part 1";
+					img.src = "circuitboard.JPG";
 					img.style.display = 'inline-block';
-					img2.src = "";
+					img2.src = "pluggedincb.JPG";
 					img2.style.display = 'inline-block';
-					img3.src = "";
+					img3.src = "scratch.JPG";
 					img3.style.display = 'inline-block';
 					img4.src = "";
 					img4.style.display = 'none';
 					img5.src = "";
 					img5.style.display = 'none';
-					body.innerHTML = "";
+					body.innerHTML = "For part one of this rotation, I used the Raspberry Pi to light up an LED by using Scratch for the programming.";
 					placeholder.style.display = 'none';
 					leftPanel.style.display = 'inline-block';
 				}
@@ -132,21 +127,21 @@
 				}
 			}
 			function showP2Stuff() {
-				if (head.innerHTML != "B") {
+				if (head.innerHTML != "Part 2") {
 					writing.style.display = 'inline-block';
 					leftPanel.style.borderRadius = "15px 40px";
-					head.innerHTML = "B";
-					img.src = "";
+					head.innerHTML = "Part 2";
+					img.src = "trafficlight2.JPG";
 					img.style.display = 'inline-block';
-					img2.src = "";
-					img2.style.display = 'none';
-					img3.src = "";
-					img3.style.display = 'none';
-					img4.src = "";
-					img4.style.display = 'none';
+					img2.src = "trafficlight3.JPG";
+					img2.style.display = 'inline-block';
+					img3.src = "trafficlight1.JPG";
+					img3.style.display = 'inline-block';
+					img4.src = "python.JPG";
+					img4.style.display = 'inline-block';
 					img5.src = "";
 					img5.style.display = 'none';
-					body.innerHTML = "";
+					body.innerHTML = "For part two I used the Python programming language to make the traffic lights turn on and off in order.";
 					placeholder.style.display = 'none';
 					leftPanel.style.display = 'inline-block';
 				}
@@ -163,11 +158,11 @@
 				}
 			}
       			function showP3Stuff() {
-				if (head.innerHTML != "C") {
+				if (head.innerHTML != "Part 3") {
 					writing.style.display = 'inline-block';
 					leftPanel.style.borderRadius = "15px 40px";
-					head.innerHTML = "C";
-					img.src = "";
+					head.innerHTML = "Part 3";
+					img.src = "questionlights.JPG";
 					img.style.display = 'inline-block';
 					img2.src = "";
 					img2.style.display = 'none';
@@ -177,38 +172,7 @@
 					img4.style.display = 'none'
 					img5.src = "";
 					img5.style.display = 'none';
-					body.innerHTML = "";
-					placeholder.style.display = 'none';
-					leftPanel.style.display = 'inline-block';
-				}
-				else {
-					head.innerHTML = "";
-					body.innerHTML = "";
-					img.style.display = 'none';
-					img2.style.display = 'none';
-					img3.style.display = 'none';
-					img4.style.display = 'none';
-					img5.style.display = 'none';
-					placeholder.style.display = 'inline-block';
-					leftPanel.style.display = 'none';
-				}
-			}
-			function showP4Stuff() {
-				if (head.innerHTML != "D") {
-					writing.style.display = 'inline-block';
-					leftPanel.style.borderRadius = "15px 40px";
-					head.innerHTML = "D";
-					img.src = "";
-					img.style.display = 'inline-block';
-					img2.src = "";
-					img2.style.display = 'none';
-					img3.src = "";
-					img3.style.display = 'none';
-					img4.src = "";
-					img4.style.display = 'none'
-					img5.src = "";
-					img5.style.display = 'none';
-					body.innerHTML = "";
+					body.innerHTML = "For part three of this, I again used Python to do things on the Raspberry Pi. This time I connected HAT that was equipped with LEDs to the main circuitboard of the Raspberry Pi. Then I programmed each individual LED with a particular color and made a question mark pattern.";
 					placeholder.style.display = 'none';
 					leftPanel.style.display = 'inline-block';
 				}
